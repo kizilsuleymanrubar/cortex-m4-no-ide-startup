@@ -1,5 +1,5 @@
-#ifndef _LED_H
-#define _LED_H
+#ifndef __LED_H__
+#define __LED_H__
 
 
 #include "stm32f411xe.h"

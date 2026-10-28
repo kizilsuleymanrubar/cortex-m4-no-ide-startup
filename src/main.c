@@ -2,6 +2,7 @@
 	#include <stdio.h>
 #endif
 #include "led.h"
+#include "uart.h"
 
 
 #ifdef SEMIHOSTING
@@ -27,16 +28,19 @@ void SysTick_Handler(void)
 
 int main(void)
 {
-	// Initialise the semihosting feature
+	// Initialize the semihosting feature
 	#ifdef SEMIHOSTING
 		initialise_monitor_handles();
 	#endif
 
-	// Initialise LED
+	// Initialize LED
 	led_init();
 
-	// Initialise Systick
+	// Initialize Systick
 	systick_init();
+
+	//Initialize UART
+	uart_init();
 
 	while(1)
 	{
