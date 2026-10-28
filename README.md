@@ -1,6 +1,7 @@
 # cortex-m4-no-ide-startup
 Firmware development using only the ARM GNU Toolchain, without any IDE!
 
+```text
 ├── CMSIS/          # Core Cortex-M4 Microcontroller Software Interface Standard files
 ├── doc/            # Documentation, reference manuals, and datasheets
 ├── gdb_client/     # GDB debugger configuration and automation scripts
@@ -11,4 +12,4 @@ Firmware development using only the ARM GNU Toolchain, without any IDE!
 ├── README.md       # Project documentation
 ├── stm32_ls.ld     # Custom from-scratch linker script for STM32F411 memory layout
 └── syscalls.c      # System call implementations required for standard C library support
-
+```
