@@ -1,0 +1,10 @@
+arm-none-eabi-gdb
+target remote localhost:3333
+monitor reset init
+monitor flash write_image erase final.elf
+monitor arm semihosting enable (use it during SEMIHOSTING)
+monitor reset
+monitor halt
+monitor resume
+monitor shutdown
+quit
